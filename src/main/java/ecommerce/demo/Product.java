@@ -2,10 +2,11 @@ package ecommerce.demo;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "products")
-public class Product {
+public class Product implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long productId;
@@ -16,6 +17,10 @@ public class Product {
     private String type;
     private double price;
     private String productDescription;
+
+    public Product(){
+        super();
+    }
 
     public long getProductId() {
         return productId;
