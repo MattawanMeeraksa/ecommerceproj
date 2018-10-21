@@ -9,9 +9,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class DemoApplicationTests {
 
-	@Test
-	public void contextLoads() {
+	//@Test
+	//public void contextLoads() {
+			//int x = 5;
+			//int y = -2;
+			//int expectedResult = 3;
 
-	}
+			//Calculator calculator = new Calculator();
+			//int actualResult = calculator.Add(x, y);
+			//Assert.AreEqual(expectedResult, actualResult);
+		//}
+	//}
 
 }
